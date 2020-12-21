@@ -1,3 +1,3 @@
 # dots
 
-Get out 
+get out 
