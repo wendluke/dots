@@ -1,0 +1,4 @@
+configuration {
+	font: "mononoki Nerd Font 16";
+	theme: "~/.cache/wal/colors-rofi-dark.rasi";
+}
