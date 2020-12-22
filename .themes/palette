@@ -1,0 +1,20 @@
+Background #141C21
+Text #CFB79F
+Header Background #263640
+Header Text #CFB79F
+Selected Background #CFB79F
+View #141C21
+Surface #263640
+
+-- Icon Style --
+
+Light Base #CFB79F
+Medium Base #263640
+Dark Stroke #141C21
+Icons #CFB79F
+
+-- Spotify --
+
+Background #141C21
+Foreground #BFBAAC
+Accent     #CFB79F
