@@ -5,6 +5,7 @@
 
 --]]
 
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local gears = require("gears")
 local lain  = require("lain")
 local awful = require("awful")
@@ -110,20 +111,23 @@ awful.util.tagnames = { "", "", "", "" }
 
 local markup = lain.util.markup
 
+-- Instantiate the calendar widget
+local cw = calendar_widget({
+    theme='dark',
+    placement='calendar_top',
+    radius = 8
+})
+
+
 -- Clock
 --os.setlocale(os.getenv("LANG")) -- to localize the clock
 local mytextclock = wibox.widget.textclock(markup("#CFB79F", "%a %d %b, %H:%M"))
 mytextclock.font = theme.font
-theme.cal = lain.widget.cal({
-    attach_to = { mytextclock },
-    notification_preset = {
-        fg = "#FFFFFF",
-        bg = theme.bg_normal,
-        position = "top_middle",
-        font = "Monospace 10"
-    }
-})
 
+mytextclock:connect_signal("button::press", 
+    function(_, _, _, button)
+        if button == 1 then cw.toggle() end
+    end)
 
 -- MPD
 theme.mpd = lain.widget.mpd({
