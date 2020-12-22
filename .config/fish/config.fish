@@ -16,7 +16,7 @@ alias awm "cs ~/.config/awesome/"
 alias awmcfg "nvim ~/.config/awesome/rc.lua"
 alias vcfg "nvim ~/.config/nvim/init.vim"
 alias fishcfg "nvim ~/.config/fish/config.fish"
-alias themecfg "nvim ~/.config/awesome/themes/luitest/theme.lua"
+alias themecfg "nvim ~/.config/awesome/themes/vertex/theme.lua"
 alias dots='/usr/bin/git --git-dir=$HOME/dots/ --work-tree=$HOME' 
 
 #list
