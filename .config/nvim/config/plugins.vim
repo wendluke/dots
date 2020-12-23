@@ -7,10 +7,16 @@ let g:coc_global_extensions = ['coc-snippets', 'coc-pairs' , 'coc-emmet', 'coc-c
 " Aesthetics - Main 
 Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'jnurmine/Zenburn'
+Plug 'sainnhe/gruvbox-material'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'flazz/vim-colorschemes'
 
 " Functionalities 
+
+Plug 'ThePrimeagen/vim-be-good'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'

@@ -9,16 +9,20 @@ colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 
 " Lightline Config
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
+" Change default theme for lightline to match default for colorscheme
+if !exists("g:lightline")
+  let g:lightline = { 'colorscheme': 'gruvbox' }
+end
+
+" Also set better lightline layout
+if !has_key(g:lightline, 'active')
+  let g:lightline['active'] = {
+        \   'left': [['mode', 'paste'], ['readonly', 'relativepath', 'modified']],
+        \   'right': [ [], [ 'gitbranch' ], [ 'filetype' ]]
+        \ }
+  let g:lightline['component'] = { 'filetype': '%{&filetype}' }
+  let g:lightline['component_function'] = { 'gitbranch': 'fugitive#head' }
+endif
 
 "Base Config
 
@@ -29,11 +33,20 @@ set conceallevel=0
 set formatoptions-=cro
 set clipboard=unnamedplus
 
+" File find
+set ignorecase	
+set smartcase	
+set hlsearch
+set incsearch	
+set path+=**
+set wildmenu
+set nohlsearch
+
+"set showtabline=2
 set number
 set relativenumber
-set showtabline=2
-set colorcolumn=100
-set scrolloff=1
+set colorcolumn=80
+set scrolloff=5
 set sidescrolloff=5
 set ruler
 
@@ -46,8 +59,8 @@ set linebreak
 set showbreak=+++
 set textwidth=100
 set showmatch
-set belloff="all"
 set cursorline
+set noerrorbells
 
 set autoread
 set noswapfile
@@ -71,16 +84,9 @@ set nocompatible
 set hidden
 set nobackup
 set nowritebackup
-set updatetime=300
+set updatetime=50
 set shortmess+=c
 set signcolumn=yes
 
-" File find
-set ignorecase	
-set smartcase	
-set hlsearch
-set incsearch	
-set path+=**
-set wildmenu
 
 au! BufWritePost $MYVIMRC source %
