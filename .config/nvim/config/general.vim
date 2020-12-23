@@ -5,7 +5,7 @@ let g:mapleader = "\<Space>"
 set termguicolors
 let g:gruvbox_transparent_bg = '1'
 let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox 
+colorscheme base16-tomorrow-night
 hi Normal guibg=NONE ctermbg=NONE
 
 " Lightline Config
