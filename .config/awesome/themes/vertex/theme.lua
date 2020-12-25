@@ -18,18 +18,18 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.icon_dir                                  = os.getenv("HOME") .. "/.config/awesome/themes/vertex/icons"
-theme.font                                      = "Roboto Bold 10"
-theme.taglist_font                              = "FontAwesome 17"
-theme.fg_normal                                 = "#cfb79f"
-theme.fg_focus                                  = "#cfb79f"
+theme.font                                      = "Clear Sans 10"
+theme.taglist_font                              = "Clear Sans 17"
+theme.fg_normal                                 = "#FDF6E3"
+theme.fg_focus                                  = "#FDF6E3"
 theme.bg_focus                                  = "#141c21"
-theme.bg_focus2                                 = "#cfb79f"
+theme.bg_focus2                                 = "#FDF6E3"
 theme.bg_normal                                 = "#141c21"
 theme.fg_urgent                                 = "#CC9393"
 theme.bg_urgent                                 = "#006B8E"
 theme.border_width                              = dpi(1)
 theme.border_normal                             = "#263640"
-theme.border_focus                              = "#cfb79f"
+theme.border_focus                              = "#FDF6E3"
 theme.tooltip_border_color                      = theme.fg_focus
 theme.tooltip_border_width                      = theme.border_width
 theme.menu_height                               = dpi(24)
@@ -84,7 +84,7 @@ theme.layout_cornerse                           = theme.default_dir.."/layouts/c
 theme.layout_centerwork                         = theme.default_dir.."/layouts/centerworkw.png"
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
-theme.useless_gap                               = dpi(5)
+theme.useless_gap                               = dpi(3)
 theme.titlebar_close_button_normal              = theme.default_dir.."/titlebar/close_normal.png"
 theme.titlebar_close_button_focus               = theme.default_dir.."/titlebar/close_focus.png"
 theme.titlebar_minimize_button_normal           = theme.default_dir.."/titlebar/minimize_normal.png"
@@ -121,7 +121,7 @@ local cw = calendar_widget({
 
 -- Clock
 --os.setlocale(os.getenv("LANG")) -- to localize the clock
-local mytextclock = wibox.widget.textclock(markup("#CFB79F", "%a %d %b, %H:%M"))
+local mytextclock = wibox.widget.textclock(markup(theme.fg_normal, "%a %d %b, %H:%M"))
 mytextclock.font = theme.font
 
 mytextclock:connect_signal("button::press", 

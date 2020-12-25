@@ -3,26 +3,25 @@ let g:mapleader = "\<Space>"
 " Theme
 
 set termguicolors
-let g:gruvbox_transparent_bg = '1'
-let g:gruvbox_contrast_dark = 'medium'
+" let g:gruvbox_contrast_dark = 'medium'
 colorscheme base16-tomorrow-night
 hi Normal guibg=NONE ctermbg=NONE
 
 " Lightline Config
 " Change default theme for lightline to match default for colorscheme
-if !exists("g:lightline")
-  let g:lightline = { 'colorscheme': 'gruvbox' }
-end
+" if !exists("g:lightline")
+"   let g:lightline = { 'colorscheme': 'gruvbox' }
+" end
 
 " Also set better lightline layout
-if !has_key(g:lightline, 'active')
-  let g:lightline['active'] = {
-        \   'left': [['mode', 'paste'], ['readonly', 'relativepath', 'modified']],
-        \   'right': [ [], [ 'gitbranch' ], [ 'filetype' ]]
-        \ }
-  let g:lightline['component'] = { 'filetype': '%{&filetype}' }
-  let g:lightline['component_function'] = { 'gitbranch': 'fugitive#head' }
-endif
+" if !has_key(g:lightline, 'active')
+"   let g:lightline['active'] = {
+"         \   'left': [['mode', 'paste'], ['readonly', 'relativepath', 'modified']],
+"         \   'right': [ [], [ 'gitbranch' ], [ 'filetype' ]]
+"         \ }
+"   let g:lightline['component'] = { 'filetype': '%{&filetype}' }
+"   let g:lightline['component_function'] = { 'gitbranch': 'fugitive#head' }
+" endif
 
 "Base Config
 
