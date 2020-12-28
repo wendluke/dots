@@ -6,3 +6,4 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
+nnoremap <silent> <Leader><Tab> :Buffers<CR>
