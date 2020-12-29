@@ -40,6 +40,10 @@ Plug 'vimwiki/vimwiki'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " File management commands
 Plug 'tpope/vim-eunuch'
+" Centered Terminal
+Plug 'voldikss/vim-floaterm'
+" Leader guide
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 " Directory Management and Tree  
 Plug 'lambdalisue/fern.vim'

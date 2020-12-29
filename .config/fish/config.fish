@@ -20,6 +20,7 @@ alias themecfg "nvim ~/.config/awesome/themes/vertex/theme.lua"
 alias dots='/usr/bin/git --git-dir=$HOME/dots/ --work-tree=$HOME' 
 alias vf 'cs ~/.config/nvim/'
 alias setbg 'feh --bg-fill'
+alias b "cs .."
 
 #list
 alias ls='ls -a --color=auto'
