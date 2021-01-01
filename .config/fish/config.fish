@@ -17,10 +17,13 @@ alias awmcfg "nvim ~/.config/awesome/rc.lua"
 alias vcfg "nvim ~/.config/nvim/init.vim"
 alias fishcfg "nvim ~/.config/fish/config.fish"
 alias themecfg "nvim ~/.config/awesome/themes/vertex/theme.lua"
+alias acfg "nvim ~/.config/alacritty/alacritty.yml"
 alias dots='/usr/bin/git --git-dir=$HOME/dots/ --work-tree=$HOME' 
 alias vf 'cs ~/.config/nvim/'
 alias setbg 'feh --bg-fill'
 alias b "cs .."
+alias p "pacman -S"
+alias nt "cs ~/Exobrain/"
 
 #list
 alias ls='ls -a --color=auto'

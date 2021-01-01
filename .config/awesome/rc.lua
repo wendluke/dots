@@ -126,11 +126,11 @@ local modkey1      = "Control"
 --change these variables if you want
 local browser1          = ""
 local editor            = os.getenv("EDITOR") or "nvim"
-local editorgui         = "atom"
+local editorgui         = "emacs"
 local filemanager       = "thunar"
 local mailclient        = "evolution"
 local mediaplayer       = "spotify"
-local terminal          = "st"
+local terminal          = "alacritty"
 local virtualmachine    = "virtualbox"
 
 -- awesome variables
@@ -351,7 +351,7 @@ globalkeys = my_table.join(
         {description = mediaplayer , group = "function keys" }),
     awful.key({ modkey }, "F11", function () awful.util.spawn( "rofi -show run -fullscreen" ) end,
         {description = "rofi fullscreen" , group = "function keys" }),
-    awful.key({ modkey }, "d", function () awful.util.spawn( "rofi -show run" ) end,
+    awful.key({ modkey }, "d", function () awful.util.spawn( "rofi -combi-modi drun,run,ssh -modi combi -show combi" ) end,
         {description = "rofi" , group = "function keys" }),
 
     -- super + ...

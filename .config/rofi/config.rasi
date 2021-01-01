@@ -1,4 +1,7 @@
 configuration {
+    modi: "window,drun,ssh,combi";
 	font: "mononoki Nerd Font 16";
 	theme: "~/.cache/wal/colors-rofi-dark.rasi";
+    combi-modi: "window,drun,ssh";
+
 }
