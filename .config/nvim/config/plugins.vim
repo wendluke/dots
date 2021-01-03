@@ -9,9 +9,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
-Plug 'phanviet/vim-monokai-pro'
 Plug 'flazz/vim-colorschemes'
 Plug 'airblade/vim-rooter' 
+" Cool Icons
+Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Functionalities 
 
@@ -23,7 +25,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 " Fast Motions
 Plug 'easymotion/vim-easymotion'
-" Emmet
+" Snippets 
+Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 " Fuzzy Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -44,6 +47,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'voldikss/vim-floaterm'
 " Leader guide
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+" Highlight Yank
+Plug 'machakann/vim-highlightedyank'
 
 " Directory Management and Tree  
 Plug 'lambdalisue/fern.vim'

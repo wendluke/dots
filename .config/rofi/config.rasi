@@ -3,5 +3,6 @@ configuration {
 	font: "mononoki Nerd Font 16";
 	theme: "~/.cache/wal/colors-rofi-dark.rasi";
     combi-modi: "window,drun,ssh";
+    combi-hide-mode-prefix: true;
 
 }

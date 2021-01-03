@@ -10,7 +10,7 @@
  "Lightline Config
  
  let g:lightline = {
-       \ 'colorscheme': 'seoul256',
+       \ 'colorscheme': 'Tomorrow_Night',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
        \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ]
@@ -26,7 +26,7 @@
  syntax enable 
  filetype plugin on
  set nocompatible
- set encoding=utf-8
+ set encoding=UTF-8
  set number relativenumber
  set formatoptions-=cro
  set clipboard=unnamedplus

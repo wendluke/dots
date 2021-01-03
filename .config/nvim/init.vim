@@ -22,3 +22,5 @@
               source $HOME/.config/nvim/config/plugins/easy-motion.vim
               source $HOME/.config/nvim/config/plugins/vim-rooter.vim
               source $HOME/.config/nvim/config/plugins/whichkey.vim
+              source $HOME/.config/nvim/config/plugins/startify.vim
+              

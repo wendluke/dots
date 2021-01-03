@@ -1,3 +1,0 @@
-# dots
-
-get out 
