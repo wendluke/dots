@@ -16,7 +16,7 @@ run "volumeicon"
 run "numlockx on"
 run "imwheel"
 run "xbanish"
-#run "picom --experimental-backends"
+run "picom --experimental-backends"
 #run "blueberry-tray"
 #run "caffeine"
 #run applications from startup

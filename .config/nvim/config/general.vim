@@ -6,7 +6,9 @@
  set termguicolors
  set bg=dark
  colorscheme base16-tomorrow-night
- 
+ set guifont=SauceCodePro\ Nerd\ Font
+
+
  "Lightline Config
  
  let g:lightline = {
@@ -25,11 +27,12 @@
 
  syntax enable 
  filetype plugin on
+ set pumheight=10
  set nocompatible
  set encoding=UTF-8
  set number relativenumber
  set formatoptions-=cro
- set clipboard=unnamedplus
+set clipboard=unnamedplus
  set pumheight=10
  set conceallevel=0
  set hidden
@@ -38,6 +41,8 @@
  set updatetime=50
  set shortmess+=c
  set signcolumn=yes
+" Treat dash separated words as a word text object
+ set iskeyword+=-   
  
  set title
  
@@ -52,8 +57,8 @@
  set nohlsearch
  
  " Disables automatic commenting on newline
- autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
- 
+ set formatoptions-=cro 
+
  set showtabline=2
  set colorcolumn=80
  set scrolloff=5
@@ -87,5 +92,5 @@
  
  
 
-
+ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
  au! BufWritePost $MYVIMRC source %

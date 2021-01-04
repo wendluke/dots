@@ -5,7 +5,11 @@
     nnoremap <leader>tt :colorscheme 
     nnoremap <leader>vs :vsplit<CR> 
     nnoremap <leader>hs :hsplit<CR> 
-    map <F11> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+    " Alternate way to save
+     nnoremap <C-s> :w<CR>
+    " Alternate way to quit
+    nnoremap <C-Q> :wq!<CR>
+
     
     " Use alt + hjkl to resize windows
     nnoremap <silent> <C-Up>    :resize -2<CR>
@@ -13,10 +17,10 @@
     nnoremap <silent> <C-Left>  :vertical resize -2<CR>
     nnoremap <silent> <C-Right> :vertical resize +2<CR>
     
-    " TAB in general mode will move to text buffer
-    nnoremap <TAB> :bnext<CR>
+    " TAB in normal mode will move to text buffer
+    nnoremap <silent> <TAB> :bnext<CR>
     " SHIFT-TAB will go back
-    nnoremap <S-TAB> :bprevious<CR>
+    nnoremap <silent> <S-TAB> :bprevious<CR>
     
     " Vsplit Movement
     nnoremap <C-J> <C-W><C-J>

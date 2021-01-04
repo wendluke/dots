@@ -23,4 +23,5 @@
               source $HOME/.config/nvim/config/plugins/vim-rooter.vim
               source $HOME/.config/nvim/config/plugins/whichkey.vim
               source $HOME/.config/nvim/config/plugins/startify.vim
-              
+              source $HOME/.config/nvim/config/plugins/barbar.vim
+              source $HOME/.config/nvim/config/plugins/floaterm.vim

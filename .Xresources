@@ -16,7 +16,6 @@ URxvt*background:       [90]#000000
 *.foreground: #cfb79f
 *.background: #141c21
 *.cursorColor: #fdf6e3
-#*.cursorColor: #afbfbf
 
 ! black
 *.color0: #263640
@@ -53,10 +52,10 @@ URxvt*background:       [90]#000000
 
 ! fonts
 URxvt*letterSpace: 	    		0
-URxvt*.font: xft:mononoki Nerd Font:style=Regular:size=16
-URxvt*.boldFont: xft:mononoki Nerd Font:style=Bold:size=16
-URxvt*.italicFont: xft:mononoki Nerd Font:style=Italic:size=16
-URxvt*.boldItalicFont: xft:mononoki Nerd Font:style=Bold Italic:size=16
+URxvt*.font: xft:Hack Nerd Font:style=Regular:size=16
+URxvt*.boldFont: xft:Hack Nerd Font:style=Bold:size=16
+URxvt*.italicFont: xft:Hack Nerd Font:style=Italic:size=16
+URxvt*.boldItalicFont: xft:Hack Nerd Font:style=Bold Italic:size=16
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
