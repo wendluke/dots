@@ -24,6 +24,8 @@ alias setbg 'feh --bg-fill'
 alias b "cs .."
 alias p "pacman -S"
 alias nt "cs ~/Exobrain/"
+alias rmf "rm -Rf"
+alias sv "sudo nvim"
 
 #list
 alias ls='ls -a --color=auto'
